@@ -1,10 +1,15 @@
 import React from 'react'
 
-function Navbar() {
+function Navbar({prop}) {
 
    
   return (
-    <div>Navbar</div>
+    <div>
+      <h1>
+        {prop}
+      
+      </h1>
+    </div>
    
   )
 }

@@ -1,9 +1,17 @@
 import React from 'react'
+import shekil from '../../img/maxresdefault.jpg'
+import ayxan from './card.module.css'
 
-function Card() {
+function Card({data}) {
+
+  console.log(data);
+
   return (
-    <div>
-        
+    <div className={ayxan.card} >
+        <img src={shekil} alt=".." />
+        <h3>{data}</h3>
+        <p>Creating React cards</p>
+
     </div>
   )
 }
